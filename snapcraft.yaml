@@ -32,9 +32,13 @@ parts:
     build-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop
+    - qmlscene
+    - qml-module-ubuntu-components
     stage-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop
+    - qmlscene
+    - qml-module-ubuntu-components
     after: [desktop-qt5]
     organize:
       icon.png: meta/gui/instagraph.png
