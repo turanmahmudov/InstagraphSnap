@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Instagraph
+GenericName=Instagraph
+Comment=Unofficial Native Instagraph Client
+Exec=instagraph
+Icon=${SNAP}/meta/gui/instagraph.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Utility
+Name[en_US]=instagraph

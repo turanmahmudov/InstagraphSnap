@@ -1,0 +1,41 @@
+name: instagraph
+version: '0.1.0'
+summary: Unofficial Native Instagraph Client
+description: Unofficial Native Instagraph Client
+
+grade: devel
+confinement: strict
+
+apps:
+  instagraph:
+    command: desktop-launch $SNAP/bin/instagraph
+    plugs:
+      - unity7
+      - x11
+      - opengl
+      - gsettings
+      - network
+      - network-bind
+      - content
+      - camera
+
+parts:
+  launcher:
+    plugin: dump
+    source: .
+    organize:
+        launcher.sh: bin/instagraph-launch
+  instagraph:
+    plugin: qmake
+    source: /home/turan/Apps/Instagraph/
+    qt-version: qt5
+    build-packages:
+    - ubuntu-sdk-libs
+    - qtubuntu-desktop
+    stage-packages:
+    - ubuntu-sdk-libs
+    - qtubuntu-desktop
+    after: [desktop-qt5]
+    organize:
+      icon.png: meta/gui/instagraph.png
+
