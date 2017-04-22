@@ -34,11 +34,13 @@ parts:
     - qtubuntu-desktop
     - qmlscene
     - qml-module-ubuntu-components
+    - qtdeclarative5-dev
     stage-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop
     - qmlscene
     - qml-module-ubuntu-components
+    - qtdeclarative5-dev
     after: [desktop-qt5]
     organize:
       icon.png: meta/gui/instagraph.png
