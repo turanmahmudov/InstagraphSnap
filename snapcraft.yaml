@@ -27,7 +27,7 @@ parts:
         launcher.sh: bin/instagraph-launch
   instagraph:
     plugin: qmake
-    source: /home/turan/Apps/Instagraph/
+    source: https://github.com/turanmahmudov/Instagraph.git
     qt-version: qt5
     build-packages:
     - ubuntu-sdk-libs
