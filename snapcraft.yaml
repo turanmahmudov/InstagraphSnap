@@ -3,7 +3,7 @@ version: '0.1.2'
 summary: Unofficial Native Instagraph Client
 description: Unofficial Native Instagraph Client
 
-grade: devel
+grade: stable
 confinement: strict
 
 apps:
