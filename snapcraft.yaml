@@ -1,5 +1,5 @@
 name: instagraph
-version: '0.1.2'
+version: '0.1.3'
 summary: Unofficial Native Instagraph Client
 description: Unofficial Native Instagraph Client
 
@@ -23,7 +23,7 @@ parts:
     plugin: dump
     source: .
     organize:
-        launcher.sh: bin/instagraph-launch
+        launcher.sh: bin/instagraph
   instagraph:
     plugin: qmake
     source: https://github.com/turanmahmudov/Instagraph.git
