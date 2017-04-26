@@ -1,7 +1,7 @@
 name: instagraph
-version: '0.1.4'
-summary: Unofficial Native Instagraph Client
-description: Unofficial Native Instagraph Client
+version: '0.1.5'
+summary: Unofficial Instagraph Client
+description: Unofficial Instagraph Client
 
 grade: stable
 confinement: strict
