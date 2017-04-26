@@ -1,5 +1,5 @@
 name: instagraph
-version: '0.1.7'
+version: '0.1.8'
 summary: Unofficial Instagraph Client
 description: Unofficial Instagraph Client
 
@@ -10,7 +10,6 @@ apps:
   instagraph:
     command: desktop-launch $SNAP/bin/instagraph
     plugs:
-      - unity7
       - network
       - network-bind
       - camera
