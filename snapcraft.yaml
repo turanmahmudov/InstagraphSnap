@@ -16,7 +16,6 @@ apps:
       - gsettings
       - network
       - network-bind
-      - content-hub
       - camera
 
 parts:
