@@ -1,5 +1,5 @@
 name: instagraph
-version: '0.1.3'
+version: '0.1.4'
 summary: Unofficial Native Instagraph Client
 description: Unofficial Native Instagraph Client
 
@@ -43,4 +43,3 @@ parts:
     after: [desktop-qt5]
     organize:
       icon.png: setup/gui/instagraph.png
-
