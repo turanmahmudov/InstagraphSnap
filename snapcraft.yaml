@@ -1,5 +1,5 @@
 name: instagraph
-version: '0.1.11'
+version: '0.1.18'
 summary: Unofficial Instagraph Client
 description: Unofficial Instagraph Client
 
@@ -17,6 +17,11 @@ apps:
       - network
       - network-bind
       - camera
+      - pulseaudio
+      - alsa
+      - location-control
+      - location-observe
+      - ubuntu-download-manager
 
 parts:
   launcher:
@@ -31,8 +36,6 @@ parts:
     build-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop
-    - qmlscene
-    - qml-module-ubuntu-components
     - qtdeclarative5-dev
     stage-packages:
     - ubuntu-sdk-libs
@@ -40,6 +43,8 @@ parts:
     - qmlscene
     - qml-module-ubuntu-components
     - qtdeclarative5-dev
+    - gstreamer1.0-pulseaudio
+    - gstreamer1.0-libav
     after: [desktop-qt5]
     organize:
-      icon.png: setup/gui/instagraph.png
+      icon.png: meta/gui/instagraph.png
