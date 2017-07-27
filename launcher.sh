@@ -10,4 +10,4 @@ else
     ARCH="$SNAP_ARCH-linux-gnu"
 fi
 
-exec $SNAP/lib/$ARCH/bin/Instagraph "$@"
+exec $SNAP/opt/Instagraph/bin/Instagraph "$@"
