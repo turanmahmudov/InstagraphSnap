@@ -9,6 +9,9 @@ confinement: strict
 apps:
   instagraph:
     command: desktop-launch $SNAP/bin/instagraph
+    environment:
+      DISABLE_WAYLAND: 1
+      IS_DESKTOP: 1
     plugs:
       - unity7
       - x11
