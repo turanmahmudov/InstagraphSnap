@@ -33,9 +33,6 @@ parts:
     plugin: qmake
     source: https://github.com/turanmahmudov/Instagraph.git
     qt-version: qt5
-    environment:
-      vars:
-        IS_DESKTOP: 1
     build-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop

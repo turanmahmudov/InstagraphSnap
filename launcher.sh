@@ -10,4 +10,4 @@ else
     ARCH="$SNAP_ARCH-linux-gnu"
 fi
 
-exec $SNAP/opt/Instagraph/bin/Instagraph "$@"
+exec export IS_DESKTOP=1 & $SNAP/opt/Instagraph/bin/Instagraph "$@"
