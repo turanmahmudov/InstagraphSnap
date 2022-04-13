@@ -1,5 +1,5 @@
 name: instagraph
-version: '0.4'
+version: '0.5'
 summary: Unofficial Instagraph Client
 description: Unofficial Instagraph Client
 
@@ -33,6 +33,9 @@ parts:
     plugin: qmake
     source: https://github.com/turanmahmudov/Instagraph.git
     qt-version: qt5
+    environment:
+      vars:
+        IS_DESKTOP: 1
     build-packages:
     - ubuntu-sdk-libs
     - qtubuntu-desktop
@@ -45,6 +48,10 @@ parts:
     - qtdeclarative5-dev
     - gstreamer1.0-pulseaudio
     - gstreamer1.0-libav
+    - gstreamer1.0-plugins-bad
+    - gstreamer1.0-plugins-ugly
+    - qml-module-qtquick-dialogs
+    - qml-module-qtquick-controls
     after: [desktop-qt5]
     organize:
       icon.png: meta/gui/instagraph.png
