@@ -52,6 +52,5 @@ parts:
     - gstreamer1.0-plugins-ugly
     - qml-module-qtquick-dialogs
     - qml-module-qtquick-controls
-    after: [desktop-qt5]
     organize:
       icon.png: meta/gui/instagraph.png
