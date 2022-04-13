@@ -5,6 +5,7 @@ description: Unofficial Instagraph Client
 
 grade: stable
 confinement: strict
+base: core20
 
 apps:
   instagraph:
