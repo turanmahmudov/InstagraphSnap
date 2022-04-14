@@ -5,6 +5,7 @@ description: Unofficial Instagraph Client
 
 grade: stable
 confinement: strict
+base: core20
 
 apps:
   instagraph:
@@ -35,14 +36,11 @@ parts:
   instagraph:
     plugin: qmake
     source: https://github.com/turanmahmudov/Instagraph.git
-    qt-version: qt5
     build-packages:
     - ubuntu-sdk-libs
-    - qtubuntu-desktop
     - qtdeclarative5-dev
     stage-packages:
     - ubuntu-sdk-libs
-    - qtubuntu-desktop
     - qmlscene
     - qml-module-ubuntu-components
     - qtdeclarative5-dev
@@ -52,6 +50,5 @@ parts:
     - gstreamer1.0-plugins-ugly
     - qml-module-qtquick-dialogs
     - qml-module-qtquick-controls
-    after: [desktop-qt5]
     organize:
       icon.png: meta/gui/instagraph.png
